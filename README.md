@@ -1,6 +1,6 @@
 # Thẩm định · Giao diện công khai
 
-Không gian thẩm định CPC1 với ba hệ thống: hơi tinh khiết, khí nén và nitơ; thư viện 18 biểu mẫu. Nền kem, chữ đậm dễ đọc, đường cong nhẹ.
+Không gian thẩm định CPC1 với ba hệ thống: hơi tinh khiết, khí nén và nitơ; thư viện 18 biểu mẫu. Nền trắng, xám trung tính, nhận diện V/Q team và đường cong nhẹ.
 
 Đây là bản giao diện: xem, tìm và chọn biểu mẫu. Chưa mở nhập liệu, lưu hồ sơ hoặc tạo báo cáo trong khi hoàn tất kết nối dữ liệu.
 

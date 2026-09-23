@@ -21,23 +21,25 @@
 }
 
 :root {
-  --td-bg: #f6f3ec;
-  --td-surface: #fffdf8;
-  --td-ink: #302e28;
-  --td-muted: #6b665c;
-  --td-line: #ddd7cb;
-  --td-accent: #556447;
-  --td-accent-deep: #3f4c35;
-  --td-accent-soft: #e8ebdf;
+  --td-bg: #ffffff;
+  --td-surface: #ffffff;
+  --td-ink: #202124;
+  --td-muted: #565b63;
+  --td-line: #dfe1e5;
+  --td-accent: #7d1831;
+  --td-accent-deep: #5b1124;
+  --td-accent-soft: #f7eef1;
   --td-pass: #296247;
   --td-pass-soft: #e6f0e9;
   --td-fail: #a63a35;
   --td-fail-soft: #fae9e7;
   --td-warning: #86651d;
   --td-warning-soft: #faf1d7;
-  --td-radius: 16px;
-  --td-shadow: 0 10px 30px rgb(66 58 41 / 7%);
-  --td-focus: #9a6c18;
+  --td-neutral-soft: #f4f5f6;
+  --td-control-line: #818791;
+  --td-radius: 14px;
+  --td-shadow: 0 10px 30px rgb(22 24 28 / 5%);
+  --td-focus: #1e3a8a;
 }
 
 body { font-family: "Be Vietnam Pro", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
