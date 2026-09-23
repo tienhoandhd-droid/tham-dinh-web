@@ -1,17 +1,66 @@
 <!doctype html>
-<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light"><title>Thẩm định | Biểu mẫu hệ thống</title>
-<link rel="stylesheet" href="./theme.css"><link rel="stylesheet" href="./home.css"><link rel="stylesheet" href="./publication.css"><link rel="stylesheet" href="./brand.css"><link rel="icon" type="image/svg+xml" href="./favicon.svg"></head>
-<body data-publication-module><a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
-<div class="home-shell"><aside class="home-sidebar" aria-label="Biểu mẫu hệ thống">
-<a class="home-brand" href="./index.html" aria-label="V/Q team, Thẩm định, trang tổng quan"><span class="vq-wordmark" role="img" aria-label="V/Q team"><b>V</b><i aria-hidden="true">/</i><b>Q</b><small>team</small></span><span class="brand-product"><strong>Thẩm định</strong><small>CPC1</small></span></a>
-<a class="publication-back" href="./index.html">← Tổng quan</a><p class="eyebrow">BIỂU MẪU</p>
-<nav id="publication-forms" class="publication-forms" aria-label="Chọn biểu mẫu"></nav></aside>
-<main id="main-content" tabindex="-1"><header class="home-header"><p class="section-kicker">CPC1 / THẨM ĐỊNH HỆ THỐNG</p>
-<nav class="publication-systems" aria-label="Chọn hệ thống"><a href="./steam.html" data-system="steam">Hơi tinh khiết</a><a href="./gas.html?system=air" data-system="air">Khí nén</a><a href="./gas.html?system=nitrogen" data-system="nitrogen">Nitơ</a></nav></header>
-<section class="intro"><div><p class="eyebrow">THƯ VIỆN BIỂU MẪU</p><h1 id="publication-system">Hệ thống</h1><p class="lede">Một quy trình thống nhất, từ số liệu đến báo cáo.</p></div></section>
-<section class="publication-form-card" aria-labelledby="publication-title"><p class="eyebrow" id="publication-code"></p><h2 id="publication-title">Biểu mẫu</h2><p id="publication-description"></p>
-<div class="publication-notice" role="status"><strong>Bản giao diện · Chưa mở nhập liệu</strong><p>Kết nối kho dữ liệu đang được hoàn tất. Hiện chưa thể nhập, lưu hồ sơ hoặc tạo báo cáo trên trang công khai.</p></div>
-<a class="publication-back" href="./index.html#bieu-mau">Xem toàn bộ biểu mẫu →</a></section>
-<section class="publication-flow" aria-labelledby="publication-flow-title"><h2 id="publication-flow-title">Luồng làm việc sau khi kết nối</h2><ol><li>Chọn điểm lấy mẫu</li><li>Nhập số liệu</li><li>Tính và đánh giá</li><li>Lưu hồ sơ</li><li>In theo mẫu gốc</li></ol><p>Số liệu gốc và kết quả được lưu theo phiên bản để phục vụ việc xem lại và phân tích xu hướng.</p></section>
-</main></div><script src="./publication.js" defer></script></body></html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Thẩm định | Hơi tinh khiết</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./dialog.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="stylesheet" href="./theme.css">
+  <link rel="stylesheet" href="./brand.css">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Biểu mẫu thử nghiệm">
+      <div class="brand"><span class="vq-wordmark" role="img" aria-label="V/Q team"><b>V</b><i aria-hidden="true">/</i><b>Q</b><small>team</small></span><span><strong>Thẩm định</strong><small>CPC1 · Hơi tinh khiết</small></span></div>
+      <p class="prototype">Bản thử · Hồ sơ nháp</p>
+      <nav class="system-links" aria-label="Chọn hệ thống"><a href="./index.html">Tổng quan</a><a href="./steam.html" aria-current="page">Hơi</a><a href="./gas.html?system=air">Khí nén</a><a href="./gas.html?system=nitrogen">Nitơ</a></nav>
+      <nav id="form-nav" class="form-nav" aria-label="Chọn biểu mẫu"></nav>
+      <section class="location-panel" aria-labelledby="location-heading">
+        <div class="panel-title"><h2 id="location-heading">Điểm lấy mẫu</h2><span id="location-count">0/0</span></div>
+        <label class="search"><span class="sr-only">Tìm điểm lấy mẫu</span><input id="location-search" type="search" placeholder="Tìm mã hoặc vị trí"></label>
+        <div id="location-list" class="location-list" role="list"></div>
+      </section>
+    </aside>
+    <main id="main-content" class="content" tabindex="-1">
+      <header class="topbar">
+        <div><p class="eyebrow">THẨM ĐỊNH HỆ THỐNG</p><h1 id="form-title">Đang tải biểu mẫu…</h1><p id="form-subtitle" class="muted">Kết quả chỉ có hiệu lực sau khi máy chủ đánh giá.</p></div>
+        <div class="connection"><span id="connection-dot" class="dot" aria-hidden="true"></span><span id="connection-text">Đang kết nối máy chủ</span><button id="auth-button" class="button secondary auth-button" type="button">Đăng nhập</button></div>
+      </header>
+      <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+      <section id="error-summary" class="error-summary" role="alert" tabindex="-1" hidden></section>
+      <section class="context-card" aria-label="Thông tin bản thử">
+        <div><span>Hồ sơ</span><strong id="record-state">Chế độ xem trước — chưa lưu</strong></div>
+        <div><span>Phiên bản công thức</span><strong id="formula-version">—</strong></div>
+        <div><span>Địa điểm đang chọn</span><strong id="current-location">—</strong></div>
+      </section>
+      <form id="entry-form" novalidate>
+        <div id="form-body"></div>
+        <div class="action-bar">
+          <p id="draft-state" class="draft-state">Chưa có kết quả tính.</p>
+          <div class="actions">
+            <button id="draft-open" class="button secondary" type="button">Mở bản nháp</button>
+            <button id="draft-download" class="button secondary" type="button">Tải bản nháp</button>
+            <button id="record-load" class="button secondary" type="button">Hồ sơ đã lưu</button>
+            <button id="record-save" class="button secondary" type="button">Lưu hồ sơ</button>
+            <button id="evaluate" class="button primary" type="submit">Tính và đánh giá</button>
+            <button id="print" class="button print" type="button">In biểu mẫu</button>
+          </div>
+          <input id="draft-file" type="file" accept="application/json,.json" hidden>
+        </div>
+      </form>
+    </main>
+  </div>
+  <template id="field-template"><div class="field"><label></label><input><p class="field-help"></p><p class="field-error" role="alert"></p></div></template>
+  <dialog id="auth-dialog" aria-labelledby="auth-title"><form id="auth-form" class="dialog-form"><div class="dialog-head"><h2 id="auth-title">Đăng nhập CPC1</h2><button id="auth-close" class="dialog-close" type="button" aria-label="Đóng">×</button></div><p>Nhập tài khoản được cấp để truy cập hồ sơ Supabase.</p><label>Email<input id="auth-email" type="email" autocomplete="email" required maxlength="160"></label><label>Mật khẩu<input id="auth-password" type="password" autocomplete="current-password" required maxlength="256"></label><p id="auth-error" class="field-error" role="alert"></p><button class="button primary" type="submit">Đăng nhập</button></form></dialog>
+  <dialog id="records-dialog" aria-labelledby="records-title"><section class="dialog-form"><div class="dialog-head"><h2 id="records-title">Hồ sơ đã lưu</h2><button id="records-close" class="dialog-close" type="button" aria-label="Đóng">×</button></div><p id="records-note">Chọn hồ sơ để mở.</p><div id="records-list" class="records-list"></div></section></dialog>
+  <script src="./runtime-config.js" defer></script>
+  <script src="./cloud.js" defer></script>
+  <script src="./api.js" defer></script>
+  <script src="./app.js" defer></script>
+</body>
+</html>

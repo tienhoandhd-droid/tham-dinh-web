@@ -1,7 +1,9 @@
-# Thẩm định · Giao diện công khai
+# Thẩm định · V/Q team
 
-Không gian thẩm định CPC1 với ba hệ thống: hơi tinh khiết, khí nén và nitơ; thư viện 18 biểu mẫu. Nền trắng, xám trung tính, nhận diện V/Q team và đường cong nhẹ.
+Frontend công khai cho [website Thẩm định](https://tienhoandhd-droid.github.io/tham-dinh-web/).
 
-Đây là bản giao diện: xem, tìm và chọn biểu mẫu. Chưa mở nhập liệu, lưu hồ sơ hoặc tạo báo cáo trong khi hoàn tất kết nối dữ liệu.
+Hơi tinh khiết, khí nén và nitơ: chọn biểu mẫu → đăng nhập bằng tài khoản được cấp → nhập/tính → lưu → in. Dữ liệu và mẫu in nằm trong Supabase riêng tư; kho này chỉ chứa tệp trình duyệt. Publishable key dùng cho browser, quyền được kiểm tra phía server.
 
-Kho này chỉ chứa tệp giao diện tĩnh và font Be Vietnam Pro (giấy phép trong `fonts/OFL.txt`). Không chứa dữ liệu thẩm định, bộ mẫu in gốc, cấu hình Supabase hoặc mã cơ sở dữ liệu.
+Mã nguồn/backend được quản lý trong kho riêng tư `tienhoandhd-droid/tham-dinh`. Không đặt hồ sơ, mẫu báo cáo, backup hoặc khóa quản trị vào kho này. Phần mềm hỗ trợ nghiệp vụ; kết quả tính không thay phê duyệt QA. Biểu đồ lịch sử chưa phát hành.
+
+Font giao diện Be Vietnam Pro, giấy phép trong `fonts/OFL.txt`.
